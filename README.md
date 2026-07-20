@@ -12,6 +12,10 @@ This is a first-party OpenLeash plugin repository. The plugin owns its domain lo
 - `src/index.ts` implements the plugin.
 - `src/openleash-plugin-runtime.ts` contains tiny local helper types used by this standalone repo.
 
+## Configuration scope
+
+The plugin defines one manifest schema and consumes one request-scoped effective configuration. OpenLeash, not this plugin, merges organization defaults, matching organization agent profiles, and permitted user/global or per-agent settings. A mandatory organization install cannot be disabled by an employee, but its configuration may remain editable when the admin leaves it unlocked. The same plugin code runs in Individual Open Source, personal or organization OpenLeash Cloud, and Private Cloud.
+
 ## Development
 
 ```bash
