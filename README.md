@@ -2,6 +2,8 @@
 
 First-party OpenLeash plugin that guards destructive tools and broad data operations.
 
+When it detects a destructive operation, the plugin also publishes a short-lived typed session annotation through the Island Contribution API. OpenLeash renders that annotation in Live Sessions; this plugin does not own or inject UI.
+
 This is a first-party OpenLeash plugin repository. The plugin owns its domain logic, prompts, schemas, parsing, and local fallbacks. OpenLeash provides only primitive runtime capabilities such as evaluator LLM calls, plugin-scoped storage, signals, logs, usage records, notifications, and selected host context.
 
 ## Source
